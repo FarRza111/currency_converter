@@ -11,10 +11,10 @@ class GetData:
     @property
     def api(self):
         return self._api
-    @api.setter
-    def api(self, value):
-        # You can add additional validation logic here if needed
-        self._api = value
+    # @api.setter
+    # def api(self, value):
+    #     # You can add additional validation logic here if needed
+    #     self._api = value
 
     def fetch_data(self):
         pay_amnt: dict = {'access_key': self.api}
