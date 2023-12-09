@@ -1,4 +1,5 @@
 import json
+import os
 from typing import Final
 import requests
 
@@ -44,7 +45,7 @@ class GetData:
 
 if __name__ == "__main__":
     BASE_URL: Final[str] = 'http://api.exchangeratesapi.io/v1/latest'
-    # API_KEY: Final[str] = '924b8e007b6804e9d6c74acfb501e218'
+    API_KEY: Final[str] = os.getenv("API_KEY")
     cs = GetData(BASE_URL, GetData.api,'AUD')
     conversion_result = cs.conversion_rate
 
