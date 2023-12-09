@@ -6,7 +6,7 @@ import requests
 class GetData:
     def __init__(self, url, api, currency):
         self.url = url
-        self._api =  '924b8e007b6804e9d6c74acfb501e218'
+        self._api =  'YOUR API KEY'
         self.currency = currency
 
     @property
